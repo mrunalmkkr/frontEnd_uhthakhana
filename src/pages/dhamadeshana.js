@@ -150,27 +150,10 @@ export default function Dhamadeshana() {
 
       {/* -------- UPLOADS (LIKE HOME.JS) -------- */}
       <hr />
-      <h3>Photos & Videos</h3>
+     
 
-      {uploads.length === 0 && <p>No uploads yet</p>}
-
-      {uploads.map((item) => (
-        <div key={item.id} style={{ marginBottom: "20px" }}>
-          {item.type === "photo" ? (
-            <img src={item.url} alt="" width="250" />
-          ) : (
-            <video src={item.url} controls width="350" />
-          )}
-
-          <p>{item.desc}</p>
-
-          {user && (
-            <button onClick={() => deleteUpload(item.id)}>
-              Delete
-            </button>
-          )}
-        </div>
-      ))}
+        
+       
     </Container>
   );
 }
