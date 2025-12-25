@@ -1,0 +1,115 @@
+/* Main Navbar */
+.top-navbar {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff8008, #ffc837);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+  color: #2c2c2c;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* Center links */
+.nav-center {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #2c2c2c;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Language buttons */
+.lang-btn {
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+.lang-btn.active {
+  background: #2c2c2c;
+  color: white;
+}
+
+/* Login / Register buttons */
+.nav-btn {
+  text-decoration: none;
+  background: #2c2c2c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+.nav-btn.outline {
+  background: transparent;
+  border: 2px solid #2c2c2c;
+  color: #2c2c2c;
+}
+
+.nav-btn.outline:hover {
+  background: #2c2c2c;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nav-center {
+    display: none;
+  }
+}

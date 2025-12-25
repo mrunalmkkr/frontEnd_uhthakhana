@@ -1,0 +1,28 @@
+.navbar, .footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+
+.sidenav {
+  width: 200px;
+  background: #eee;
+  padding: 10px;
+}
+
+.sidenav a {
+  display: block;
+  margin: 8px 0;
+}
+
+.leaflet {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.form input, textarea {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
