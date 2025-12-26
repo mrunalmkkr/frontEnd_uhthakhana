@@ -5,7 +5,7 @@
   position: fixed;
   left: 0;
   top: 60px;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* vibrant gradient */
+  background: linear-gradient(135deg, #81aff3, #abc4e4); /* vibrant gradient */
   color: white;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   padding: 12px 15px;
   margin-bottom: 10px;
   border-radius: 8px;
-  color: white;
+  color: rgb(17, 3, 3);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.2s ease-in-out;

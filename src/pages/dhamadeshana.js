@@ -127,7 +127,7 @@ export default function Dhamadeshana() {
 
             <textarea
               rows={6}
-              placeholder="Marathi Dhamadeshana"
+              placeholder="Hindi Dhamadeshana"
               value={textMR}
               onChange={(e) => setTextMR(e.target.value)}
               style={{ width: "100%", marginBottom: "10px" }}

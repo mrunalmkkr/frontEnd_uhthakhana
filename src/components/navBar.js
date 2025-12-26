@@ -1,61 +1,4 @@
-// import { useContext } from "react";
-// import { LanguageContext } from "./languageContext";
-// import { Link, Route } from "react-router-dom";
-// import "./Navbar.css";
-// import Philosophy from "../pages/philosophy";
-// import { Routes } from "react-router-dom";
 
-// const Navbar = () => {
-//   const { lang, setLang } = useContext(LanguageContext);
-
-//   return (
-//     <header className="top-navbar">
-//       {/* Left */}
-//       <div className="nav-left">
-//         <h2 className="nav-logo">
-//           {lang === "EN"
-//             ? "UNTHAKHANA BHIKHU SANGA"
-//             : "उठाखाना भिक्षू संघ"}
-//         </h2>
-//       </div>
-
-//       {/* Center */}
-//       <nav className="nav-center">
-//         <Link to="/" className="nav-link">
-//           {lang === "EN" ? "Home" : "मुख्यपृष्ठ"}
-//         </Link>
-        
-//       </nav>
-
-      
-
-//       {/* Right */}
-//       <div className="nav-right">
-//         <button
-//           className={`lang-btn ${lang === "EN" ? "active" : ""}`}
-//           onClick={() => setLang("EN")}
-//         >
-//           EN
-//         </button>
-//         <button
-//           className={`lang-btn ${lang === "MR" ? "active" : ""}`}
-//           onClick={() => setLang("MR")}
-//         >
-//           MR
-//         </button>
-
-//         <Link to="/login" className="nav-btn">
-//           Login
-//         </Link>
-//         <Link to="/register" className="nav-btn outline">
-//           Register
-//         </Link>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Navbar;
 
 
 import { useContext } from "react";
@@ -80,8 +23,8 @@ const Navbar = () => {
       <div className="nav-left">
         <h2 className="nav-logo">
           {lang === "EN"
-            ? "UNTHAKHANA BHIKHU SANGA"
-            : "उठाखाना भिक्षू संघ"}
+            ? "Symbol of Knowledge Babasaheb Dr. B.R. Ambedkar Seminary, Nagpur"
+            : "ज्ञान के प्रतीक बाबासाहेब डॉ. बी. आर. आंबेडकर सेमिनरी, नागपुर"}
         </h2>
       </div>
 
@@ -102,10 +45,10 @@ const Navbar = () => {
         </button>
 
         <button
-          className={`lang-btn ${lang === "MR" ? "active" : ""}`}
-          onClick={() => setLang("MR")}
+          className={`lang-btn ${lang === "HI" ? "active" : ""}`}
+          onClick={() => setLang("HI")}
         >
-          MR
+          HI
         </button>
 
         {!user ? (

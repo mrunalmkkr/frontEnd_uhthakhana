@@ -142,7 +142,7 @@ export default function Philosophy() {
 
             <textarea
               rows={6}
-              placeholder="Marathi Philosophy"
+              placeholder="Hindi Philosophy"
               value={textMR}
               onChange={(e) => setTextMR(e.target.value)}
               style={{ width: "100%", marginBottom: "10px" }}
@@ -165,10 +165,6 @@ export default function Philosophy() {
 
       {/* -------- UPLOADS (LIKE HOME & DHAMADESANA) -------- */}
       <hr />
-      
-
-          
-      
       
     </Container>
   );

@@ -26,9 +26,9 @@ export default function Home() {
       <div className="leaflet">
         {lang === "EN" ? (
           <>
-            <h2>Welcome to UNTHAKHANA BHIKHU SANGA</h2>
+            <h2>Welcome to symbol of Knowledge Babasaheb Dr. B.R. Ambedkar Seminary, Nagpur</h2>
             <p>
-              Unthakhana Bhikhu Sanga is dedicated to spreading the teachings of
+              symbol of Knowledge Babasaheb Dr. B.R. Ambedkar Seminary, Nagpur is dedicated to spreading the teachings of
               Buddha and the philosophy of Dr. B. R. Ambedkar. Our mission is to
               promote equality, peace, compassion, and social harmony.
             </p>
@@ -44,19 +44,17 @@ export default function Home() {
           </>
         ) : (
           <>
-            <h2>उठखणा भिक्खू संघ मध्ये आपले स्वागत आहे</h2>
+            <h2>ज्ञान के प्रतीक बाबासाहेब डॉ. बी. आर. आंबेडकर सेमिनरी, नागपुर में आपका स्वागत है</h2>
             <p>
-              उठखणा भिक्खू संघ बुद्धांच्या उपदेशांचा आणि डॉ. बाबासाहेब
-              आंबेडकरांच्या तत्त्वज्ञानाचा प्रसार करण्यासाठी कार्यरत आहे.
-              समता, करुणा, शांतता आणि सामाजिक न्याय हे आमचे मुख्य उद्दिष्ट आहे.
+              ज्ञान के प्रतीक बाबासाहेब डॉ. बी. आर. आंबेडकर सेमिनरी, नागपुर
+बुद्ध के उपदेशों और डॉ. बाबासाहेब आंबेडकर के दर्शन का प्रसार करने के लिए कार्यरत है।
+समता, करुणा, शांति और सामाजिक न्याय हमारे मुख्य उद्देश्य हैं।
             </p>
             <p>
-              धम्मदेशना, शैक्षणिक उपक्रम, सामाजिक कार्ये आणि सांस्कृतिक
-              कार्यक्रमांद्वारे आम्ही समाजाच्या उन्नतीसाठी कार्य करतो.
+              धम्मदेशना, शैक्षणिक गतिविधियों, सामाजिक कार्यों और सांस्कृतिक कार्यक्रमों के माध्यम से हम समाज की उन्नति के लिए कार्य करते हैं।
             </p>
             <p>
-              या व्यासपीठावर धम्मविचार, तत्त्वज्ञान, छायाचित्रे, व्हिडिओ
-              आणि महत्त्वाच्या सूचना उपलब्ध आहेत.
+              इस मंच पर धम्मविचार, दर्शनशास्त्र, तस्वीरें, वीडियो और महत्वपूर्ण सूचनाएँ उपलब्ध हैं।
             </p>
           </>
         )}
