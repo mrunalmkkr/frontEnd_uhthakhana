@@ -112,7 +112,25 @@ export default function Dhamadeshana() {
   return (
     <Container style={{ marginLeft: "10%" }}>
       <div className="leaflet">
+         <h2>Dhamadeshana</h2>
 
+      <p>
+        Dhamadeshana means the teaching and explanation of Buddha Dhamma.
+        These teachings guide human life towards wisdom, morality, and
+        mental discipline.
+      </p>
+
+      <p>
+        The Buddha taught the Noble Eightfold Path as the way to overcome
+        suffering and attain peace.
+      </p>
+
+      <ul>
+        <li>Right View and Right Intention</li>
+        <li>Right Speech and Right Action</li>
+        <li>Right Livelihood</li>
+        <li>Right Effort, Mindfulness, and Concentration</li>
+      </ul>
         {/* -------- EDIT MODE (TEXT ONLY) -------- */}
         {user && (
           <>

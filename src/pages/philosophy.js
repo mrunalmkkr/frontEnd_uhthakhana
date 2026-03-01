@@ -126,8 +126,37 @@ export default function Philosophy() {
     <Container style={{ marginLeft: "10%" }}>
       <div className="leaflet">
 
+        <h2>Dr. B. R. Ambedkar’s Philosophy</h2>
+
+      <p>
+        Dr. Ambedkar’s philosophy is based on equality, justice,
+        liberty, and human dignity.
+      </p>
+
+      <p>
+        <strong>Social Equality:</strong> He strongly opposed caste
+        discrimination and untouchability.
+      </p>
+
+      <p>
+        <strong>Social Justice:</strong> Justice through law, rights,
+        and social reform for oppressed communities.
+      </p>
+
+      <p>
+        <strong>Education:</strong> Education as the strongest tool
+        for empowerment.
+      </p>
+
+      <p>
+        <strong>Liberty, Equality, Fraternity:</strong> Foundation
+        of a just and harmonious society.
+      </p>
+
+     
+
         {/* -------- EDIT MODE (TEXT ONLY) -------- */}
-        {user && (
+        {  user && (
           <>
             <h4>Edit Ambedkar Philosophy</h4>
 
@@ -154,7 +183,7 @@ export default function Philosophy() {
 
             <hr />
           </>
-        )}
+        )  }
 
         {/* -------- DISPLAY TEXT -------- */}
         {lang === "EN"
