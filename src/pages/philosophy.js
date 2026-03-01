@@ -164,16 +164,16 @@ export default function Philosophy() {
               rows={6}
               placeholder="English Philosophy"
               value={textEN}
-              onChange={(e) => setTextEN(e.target.value)}
-              style={{ width: "100%", marginBottom: "10px" }}
+              onChange={(e) => {setTextEN(e.target.value) }}
+              style={{width: "100%" }}
             />
 
             <textarea
               rows={6}
               placeholder="Hindi Philosophy"
               value={textHI}
-              onChange={(e) => setTextHI(e.target.value)}
-              style={{ width: "100%", marginBottom: "10px" }}
+              onChange={(e) => {setTextHI(e.target.value)}}
+              style={{ width: "100%"}}
             />
 
             <button onClick={saveText}>Save</button>
@@ -187,8 +187,28 @@ export default function Philosophy() {
 
         {/* -------- DISPLAY TEXT -------- */}
         {lang === "EN"
-          ? hasEN ? <p>{textEN}</p> : DEFAULT_EN
-          : hasHI ? <p>{textHI}</p> : DEFAULT_HI}
+          ? hasEN ?(
+        <div
+          style={{
+            whiteSpace: "pre-wrap",
+            wordBreak: "break-word",
+            overflowWrap: "break-word"
+          }}
+        >
+          {textEN}
+        </div>
+      ): DEFAULT_EN
+          : hasHI ?   (
+        <div
+          style={{
+            whiteSpace: "pre-wrap",
+            wordBreak: "break-word",
+            overflowWrap: "break-word"
+          }}
+        >
+          {textHI}
+        </div>
+      ) : DEFAULT_HI}
       </div>
 
       {/* -------- UPLOADS (LIKE HOME & DHAMADESANA) -------- */}

@@ -163,8 +163,26 @@ export default function Dhamadeshana() {
 
         {/* -------- DISPLAY TEXT -------- */}
         {lang === "EN"
-          ? hasEN ? <p>{textEN}</p> : DEFAULT_EN
-          : hasHI ? <p>{textHI}</p> : DEFAULT_HI}
+          ? hasEN ? <div
+          style={{
+            whiteSpace: "pre-wrap",
+            wordBreak: "break-word",
+            overflowWrap: "break-word"
+          }}
+        >
+          {textEN}
+        </div> : DEFAULT_EN
+          : hasHI ?  (
+        <div
+          style={{
+            whiteSpace: "pre-wrap",
+            wordBreak: "break-word",
+            overflowWrap: "break-word"
+          }}
+        >
+          {textHI}
+        </div>
+      )  : DEFAULT_HI}
       </div>
 
       {/* -------- UPLOADS (LIKE HOME.JS) -------- */}
