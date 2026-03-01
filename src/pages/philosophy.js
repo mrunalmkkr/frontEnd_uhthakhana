@@ -11,7 +11,7 @@ export default function Philosophy() {
 
   // TEXT STATE
   const [textEN, setTextEN] = useState("");
-  const [textMR, setTextMR] = useState("");
+  const [textHI, setTextHI] = useState("");
 
   // UPLOAD STATE
   const [uploads, setUploads] = useState([]);
@@ -49,7 +49,7 @@ export default function Philosophy() {
     </>
   );
 
-  const DEFAULT_MR = (
+  const DEFAULT_HI = (
     <>
       <h2>डॉ. बी. आर. अंबेडकर का दर्शन</h2>
 
@@ -84,7 +84,7 @@ export default function Philosophy() {
   useEffect(() => {
     // Load text
     setTextEN(localStorage.getItem("philosophyEN") || "");
-    setTextMR(localStorage.getItem("philosophyMR") || "");
+    setTextHI(localStorage.getItem("philosophyMR") || "");
 
     // Load uploads
     const data =
@@ -96,15 +96,15 @@ export default function Philosophy() {
 
   const saveText = () => {
     localStorage.setItem("philosophyEN", textEN);
-    localStorage.setItem("philosophyMR", textMR);
+    localStorage.setItem("philosophyHI", textHI);
     alert("Philosophy text saved");
   };
 
   const resetText = () => {
     localStorage.removeItem("philosophyEN");
-    localStorage.removeItem("philosophyMR");
+    localStorage.removeItem("philosophyHI");
     setTextEN("");
-    setTextMR("");
+    setTextHI("");
     alert("Reset to default content");
   };
 
@@ -120,7 +120,7 @@ export default function Philosophy() {
   };
 
   const hasEN = textEN.trim().length > 0;
-  const hasMR = textMR.trim().length > 0;
+  const hasHI = textHI.trim().length > 0;
 
   return (
     <Container style={{ marginLeft: "10%" }}>
@@ -171,8 +171,8 @@ export default function Philosophy() {
             <textarea
               rows={6}
               placeholder="Hindi Philosophy"
-              value={textMR}
-              onChange={(e) => setTextMR(e.target.value)}
+              value={textHI}
+              onChange={(e) => setTextHI(e.target.value)}
               style={{ width: "100%", marginBottom: "10px" }}
             />
 
@@ -188,7 +188,7 @@ export default function Philosophy() {
         {/* -------- DISPLAY TEXT -------- */}
         {lang === "EN"
           ? hasEN ? <p>{textEN}</p> : DEFAULT_EN
-          : hasMR ? <p>{textMR}</p> : DEFAULT_MR}
+          : hasHI ? <p>{textHI}</p> : DEFAULT_HI}
       </div>
 
       {/* -------- UPLOADS (LIKE HOME & DHAMADESANA) -------- */}

@@ -11,7 +11,7 @@ export default function Dhamadeshana() {
 
   // TEXT STATE
   const [textEN, setTextEN] = useState("");
-  const [textMR, setTextMR] = useState("");
+  const [textHI, setTextHI] = useState("");
 
   // UPLOAD STATE
   const [uploads, setUploads] = useState([]);
@@ -42,7 +42,7 @@ export default function Dhamadeshana() {
     </>
   );
 
-  const DEFAULT_MR = (
+  const DEFAULT_HI = (
     <>
       <h2>धमदेशना</h2>
 
@@ -71,7 +71,7 @@ export default function Dhamadeshana() {
   useEffect(() => {
     // Load text
     setTextEN(localStorage.getItem("dhammaEN") || "");
-    setTextMR(localStorage.getItem("dhammaMR") || "");
+    setTextHI(localStorage.getItem("dhammaHI") || "");
 
     // Load uploads
     const data =
@@ -83,15 +83,15 @@ export default function Dhamadeshana() {
 
   const saveText = () => {
     localStorage.setItem("dhammaEN", textEN);
-    localStorage.setItem("dhammaMR", textMR);
+    localStorage.setItem("dhammaHI", textHI);
     alert("Dhamadeshana text saved");
   };
 
   const resetText = () => {
     localStorage.removeItem("dhammaEN");
-    localStorage.removeItem("dhammaMR");
+    localStorage.removeItem("dhammaHI");
     setTextEN("");
-    setTextMR("");
+    setTextHI("");
     alert("Reset to default content");
   };
 
@@ -107,7 +107,7 @@ export default function Dhamadeshana() {
   };
 
   const hasEN = textEN.trim().length > 0;
-  const hasMR = textMR.trim().length > 0;
+  const hasHI = textHI.trim().length > 0;
 
   return (
     <Container style={{ marginLeft: "10%" }}>
@@ -147,8 +147,8 @@ export default function Dhamadeshana() {
             <textarea
               rows={6}
               placeholder="Hindi Dhamadeshana"
-              value={textMR}
-              onChange={(e) => setTextMR(e.target.value)}
+              value={textHI}
+              onChange={(e) => setTextHI(e.target.value)}
               style={{ width: "100%", marginBottom: "10px" }}
             />
 
@@ -164,7 +164,7 @@ export default function Dhamadeshana() {
         {/* -------- DISPLAY TEXT -------- */}
         {lang === "EN"
           ? hasEN ? <p>{textEN}</p> : DEFAULT_EN
-          : hasMR ? <p>{textMR}</p> : DEFAULT_MR}
+          : hasHI ? <p>{textHI}</p> : DEFAULT_HI}
       </div>
 
       {/* -------- UPLOADS (LIKE HOME.JS) -------- */}
